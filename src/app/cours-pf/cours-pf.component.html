@@ -1,0 +1,58 @@
+<div class="main">
+    <div class="row">
+        <div class="col-2">
+            <div class="carte1">
+             <div class="row">
+                <div class="col-4 " >
+                    <img src="../../assets/meet.png"  style="height: 40px; width: 60px;transform: scale(1.3);" alt="">
+                </div>
+                <div class="col-6" style="padding-top: 10px;margin-left: 10px;">Meet</div>
+             </div>
+             <div class="row btn">
+                <div class="col-12">
+                  <button type="button" id="rej">Génerer meet</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-8">  
+            <div class="carte2">
+                <form  class="row elements" #f="ngForm"  (ngSubmit)="add(f)">
+                    <div class="col-9">
+                     <div class="myinputa">
+                      <label for="">nom du cours:</label>
+                      <input type="text" name="cours" id="cour"  ngModel>
+                    </div>
+                   <div class="myinput" >
+                      <label for="" style="margin-right:3px;">lien du cours :</label>
+                       <input type="text" name="lien" id="lien" ngModel>
+                      </div>
+                    </div>
+
+                  <div class="col-3 btn1">
+                     <button id="bt1" type="submit"    >ajouter cours</button>
+                     <button id="bt2">consulter cours</button>
+                  </div>
+                </form>
+            </div>
+            <br>
+            <div class="carte3">
+                    <div class="row">
+                        <div class="col-2">cours</div>
+                        <div class="col-4">lien</div>
+                    </div>
+                  <div>
+                        <div *ngFor="let j of t1  ">
+                            <div class="row">
+                             <div class="col-2">  {{j.cours}}</div>
+                             <div class="col-4">  {{j.lien}}</div>
+                            </div>
+                        </div>
+                   </div>
+                  
+            </div>
+            
+        </div>
+    </div>
+        
+</div>

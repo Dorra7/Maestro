@@ -1,0 +1,84 @@
+.carte{
+    height: 600px ;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 200px;
+    box-shadow: 0 4px 8px 0 rgb(205, 73, 73,2);
+    transition: 0.3ms;
+    border-radius: 8px;
+   
+}
+
+.bande{
+    height: 100px;
+    background-color: #dc3838;
+     border-radius: 8px;
+}
+
+.bande h4{
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.bod{
+    margin-top: 30px;
+    
+  
+
+}
+.bod{
+    color: #C21010;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+.bod h1{
+    margin-top: 4%;
+}
+.bod h3{
+    margin-top: 10px;
+    color: black;
+}
+ .header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#dc3838;
+    border-radius: 6px 6px 0px 0px;
+    color: white;
+    margin-top: 20px;
+ }
+
+.bod h3{
+    margin-bottom: 30px;
+    
+}
+.bod input{
+    padding: 10px;
+    width: 50%;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.bod input[type=password]{
+    margin-bottom: 5px;
+
+}
+button{
+    font-size: 1.2em;
+    letter-spacing: 3px;
+    border-radius: 6px;
+    width: 52%;
+    padding: 10px;
+    background-color: #dc3838;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}

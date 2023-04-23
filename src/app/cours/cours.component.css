@@ -1,0 +1,73 @@
+.main{
+  margin-top: 150px;
+  margin-left: 200px;
+}
+.carte1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding-top: 10px;
+box-shadow: 0 4px 8px 0 rgb(205, 73, 73,2);
+transition: 0.3ms;
+border-radius: 8px;
+}
+.carte2{
+width: 105%;
+padding: 15px;
+display: flex;;
+align-items: center;
+justify-content: space-evenly;
+box-shadow: 0 4px 8px 0 rgb(205, 73, 73,2);
+transition: 0.3ms;
+border-radius: 8px;
+}
+
+#rej{
+  width: auto;
+  background-color: green;
+  color: white;
+  border-radius: 8px;
+  border-color: transparent;
+
+}
+.myinputa{
+padding-bottom: 25px; 
+}
+input{
+  width: 70%;
+  margin-left: 10px;
+  border-radius: 6px;
+}
+
+.elements{
+  width: 100%;
+}
+
+#bt1{
+  margin-top: 3px;
+  width: auto;
+  background-color: green;
+  color: white;
+  border-radius: 8px;
+  border-color: transparent;
+
+}
+#bt2{
+margin-top: 20px;
+width: auto;
+background-color: green;
+color: white;
+border-radius: 8px;
+border-color: transparent;
+
+}
+.carte3{
+width: 105%;
+height: 110%;
+padding: 15px;
+box-shadow: 0 4px 8px 0 rgb(205, 73, 73,2);
+transition: 0.3ms;
+border-radius: 8px;
+}

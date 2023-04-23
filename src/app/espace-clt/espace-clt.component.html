@@ -1,0 +1,17 @@
+<body>
+    <div class="carte">
+        <div class="header">
+            <h4>SE CONNECTER</h4>
+        </div>
+        <form class="was-validated" #f="ngForm" (ngSubmit)="add(f)" >
+        <div class="bod">
+            <h1>Maestro</h1>
+            <h3>Espace client</h3>
+            <input type="email" placeholder="votre email" required name="mail" ngModel>
+            <input type="password" placeholder="Mot de passe" name="Mot-de-passe" required ngModel>
+            <button type="submit"  routerLink="/cours-etd" >entrer</button>
+        </div>
+       </form>
+    </div>
+</body>
+<router-outlet></router-outlet>

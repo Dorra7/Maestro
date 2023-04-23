@@ -1,0 +1,147 @@
+<body>
+  <form  #f1="ngForm" (ngSubmit)="add(f1)">
+    <h3>Vous souhaitez donner des cours de musique ?</h3>
+    <br>
+    <h5>Saisissez vos informations, nous vous contacterons pour faire le point sur votre profil et vous parler des cours près de chez vous</h5>
+    <br>
+    <div class="carte">
+        <div class="row g-3">
+            <div class="col-md-6">
+              <label for="validationDefault01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validationDefault01" name="nom"  required [(ngModel)]="person.nom" value="nom" > 
+            </div>
+            <div class="col-md-5">
+              <label for="validationDefault02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="validationDefault02" name="prenom" required [(ngModel)]="person.prenom">
+            </div>
+            <div class="col-md-5">
+                <label for="validationDefault03" class="form-label">Code Postal</label>
+                <input type="text" class="form-control" id="validationDefault0445" name="codeP" required [(ngModel)]="person.codeP">
+              </div>
+            <div class="col-md-5">
+              <label for="validationDefault03" class="form-label">City</label>
+              <input type="text" class="form-control" id="validationDefault03" name="city" required [(ngModel)]="person.city">
+            </div>
+            <div class="col-md-9">
+              <label for="validationDefault05" class="form-label">Telephone</label>
+              <input type="number" class="form-control" id="validationDefault05"  name="tele" required [(ngModel)]="person.tele">
+            </div>
+            </div>
+            
+    </div>
+    <br><br>
+      <div class="carte3">
+        <div class="row g-3">
+          <div class="col-md-9">
+            <label for="validationDefault05" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="validationDefault0222" name="mail" required [(ngModel)]="person.mail">
+          </div>
+         <div class="col-md-9">
+            <label for="validationDefault05" class="form-label">Mot de passe </label>
+            <input type="password" class="form-control" id="validationDefault06" name="mot-passe" required [(ngModel)]="person.motpasse">
+         </div>
+        </div>
+      </div>
+
+
+
+    <h6>Informations complémentaires :</h6>
+    <h6>(instruments qui ne figurent pas dans la liste, disponibilité...)</h6>
+    <textarea name="" id="" cols="55" rows="4"></textarea>
+    <br>
+    <h6>Vous êtes parrainé par un autre professeur ou un élève ? Renseignez ici le nom de votre parrain :</h6>
+    <div class="col-md-4" id="fin">
+    <input type="text" class="form-control" id="validationDefault055" >
+    </div>
+    <br>
+    
+
+    <h6>Quel(s) instrument(s) enseignez-vous ?*</h6>
+    <div class="check">
+    
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck21"  >
+        <label class="form-check-label" for="invalidCheck2">
+            Accordéon
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck22"  >
+        <label class="form-check-label" for="invalidCheck2">
+            Chant
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck23"  >
+        <label class="form-check-label" for="invalidCheck2">
+            Clarinette
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck24"  >
+        <label class="form-check-label" for="invalidCheck2">
+            Eveil musical
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck25"  >
+        <label class="form-check-label" for="invalidCheck2">
+            Guitare
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck26"  >
+        <label class="form-check-label" for="invalidCheck2">
+            Harmonica
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck27"  >
+        <label class="form-check-label" for="invalidCheck2">
+            Piano
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck28" name="saxophone"  >
+        <label class="form-check-label" for="invalidCheck2">
+            Saxophone
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck29"  >
+        <label class="form-check-label" for="invalidCheck2">
+            Violons
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck12"  >
+        <label class="form-check-label" for="invalidCheck2">
+            Orgue
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck32"  >
+        <label class="form-check-label" for="invalidCheck2">
+            Batterie
+        </label>
+      </div>
+    </div>
+
+    
+    
+    
+     <br>
+     <div class="col-md-3">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required >
+        <label class="form-check-label" for="invalidCheck2">
+          Agree to terms and conditions
+        </label>
+      </div>
+    </div>
+    <br><br>
+    <div class="col-md-2">
+        <button class="btn btn-primary" type="submit" [disabled]="f1.invalid" >Submit form</button>
+    </div>
+  </form>
+</body>
