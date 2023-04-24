@@ -1,11 +1,15 @@
+<div class="bande">
+    <h3>+ Je m'inscris</h3>
+</div>
 <body>
+   
     <div class="main">
         <form #f="ngForm"  (ngSubmit)="add(f)">
      <h5>Profil musical de l'élève</h5>
      <div class="carte">
         
          <select name="instrument" id="inst" >
-             <option value="">Instrument</option>
+             <option value="ques1" selected>Instrument</option>
              <option value="inst1">chant</option>
              <option value="inst2">batterie</option>
              <option value="inst3">clarinette</option>
@@ -14,7 +18,7 @@
              <option value="inst6">piano</option>
          </select>
          <select name="style" id="style" >
-             <option value="">choisissez votre style</option>
+             <option value="ques2" selected>Choisissez votre style</option>
              <option value="style1">classique</option>
              <option value="style2">variété</option>
              <option value="style3">clarinette</option>
@@ -24,7 +28,7 @@
          </select>
  
          <select name="niveau" id="inst" >
-             <option value="">son niveau</option>
+             <option value="ques3" selected>Votre niveau</option>
              <option value="inst1">débutant</option>
              <option value="inst2">moyen</option>
              <option value="inst3">avancé</option>
@@ -36,12 +40,12 @@
      <div class="carte2">
          <select name="gendre" id="inst" ngModel>
              <option value="">civilité</option>
-             <option value="homme">monssieur</option>
-             <option value="femme">madame</option>
+             <option value="homme">Homme</option>
+             <option value="femme">Femme</option>
          </select>
          <div class="row">
              <div class="col-md-3">
-                 <label for="nom" >Prenom</label>
+                 <label for="nom" >Prénom</label>
              </div>
              <div class="col-md-9">
                  <input type="text" name="prenom" required placeholder="entrez votre prenom" [(ngModel)]="person1.prenom">

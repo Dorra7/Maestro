@@ -1,24 +1,50 @@
 body{
     margin-left: 500px;
-    margin-top: 200px;
+    margin-top: 80px;
+}
+.bande{
+    margin-top: 15px;
+    background-color: #e9edf7;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image:url("src\assets\img\ground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+    
+}
+
+.bande h3 {
+    margin-left: 200px;
+    font-size: 37px;
+    font-family: Bahnschrift SemiBold;
+    color : #CB2229;
+    
+    
 }
 .carte{
     padding-left: 30px;
     padding-top: 30px;
     height: 200px;
     width: 500px;
-  box-shadow: 0 4px 8px 0 rgb(205, 73, 73,2);
+  box-shadow: 0 4px 8px 0 #545C8C;
   transition: 0.3ms;
   border-radius: 8px;
+  font-family: Bahnschrift SemiBold;
 }
 .main h5 {
     color: #C21010;
     font-family:Arial, Helvetica, sans-serif;
     margin-bottom: 15px;
+    font-family: Bahnschrift SemiBold;
 }
 
 .carte:hover {
-    box-shadow: 0 8px 16px 0 rrgb(205, 73, 73,2);
+    box-shadow: 0 8px 16px 0 #545C8C;
    background-color: rgba(222, 227, 238, 0.308);
 }
 .carte select{
@@ -26,6 +52,7 @@ body{
  height: 37px;
  border-radius: 6px;
  margin-bottom: 20px;
+ 
 }
 
 .carte2{
@@ -33,12 +60,13 @@ body{
     padding-top: 30px;
     height: auto;
     width: 500px;
-  box-shadow: 0 4px 8px 0 rgb(205, 73, 73,2);
+  box-shadow: 0 4px 8px 0 #545C8C;
   transition: 0.3ms;
   border-radius: 8px;
+  font-family: Bahnschrift SemiBold;
 }
 .carte2:hover {
-    box-shadow: 0 8px 16px 0 rrgb(205, 73, 73,2);
+    box-shadow: 0 8px 16px 0 #545C8C;
    background-color: rgba(222, 227, 238, 0.308);
 }
 .carte2 select{
@@ -72,12 +100,13 @@ button:hover{
     padding-top: 30px;
     height: auto;
     width: 500px;
-  box-shadow: 0 4px 8px 0 rgb(205, 73, 73,2);
+  box-shadow: 0 4px 8px 0 #545C8C;
   transition: 0.3ms;
   border-radius: 8px;
+  font-family: Bahnschrift SemiBold;
 }
 .carte3:hover {
-    box-shadow: 0 8px 16px 0 rrgb(205, 73, 73,2);
+    box-shadow: 0 8px 16px 0 #545C8C;
    background-color: rgba(222, 227, 238, 0.308);
 }
 .carte3 input{
@@ -86,3 +115,4 @@ button:hover{
     border-radius: 6px;
     margin-bottom: 20px;
 }
+
