@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Service1Service } from '../services/service1.service';
 
+let a=document.getElementById("lien_meet")
 
 @Component({
   selector: 'app-cours-pf',

@@ -33,7 +33,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 140px;
+  height: 160px;
   padding-top: 10px;
   box-shadow: 0 4px 8px 0 #847146d6;
   transition: 0.3ms;
@@ -60,8 +60,8 @@
   color: white;
   border-radius: 8px;
   border-color: transparent;
-  width: 100px;
-  margin-left: 30px;
+  width: 90px;
+ 
 
 }
 
@@ -184,4 +184,17 @@ h5{
   color: #847146d6;
   padding-bottom: 20px;
 
+}
+
+
+#bt21{
+  background-color: green;
+  color: white;
+  border-radius: 8px;
+  border-color: transparent;
+  width: 90px;
+  margin-left: 37px;
+
+  
+  
 }
