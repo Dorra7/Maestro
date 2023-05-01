@@ -1,30 +1,41 @@
+<div class="bande">
+  <h3>Vous souhaiter donner des cours de musique ?</h3>
+ 
+</div>
+<div class="text">
+  <h2>Saississez alors vos informations</h2>
+</div>
+
 <body>
   <form  #f1="ngForm" (ngSubmit)="add(f1)">
-    <h3>Vous souhaitez donner des cours de musique ?</h3>
+    
     <br>
-    <h5>Saisissez vos informations, nous vous contacterons pour faire le point sur votre profil et vous parler des cours près de chez vous</h5>
+    
     <br>
+   
     <div class="carte">
         <div class="row g-3">
-            <div class="col-md-6">
-              <label for="validationDefault01" class="form-label">First name</label>
+            <div class="col-md-5">
+              <label for="validationDefault01" class="form-label">Nom</label>
               <input type="text" class="form-control" id="validationDefault01" name="nom"  required [(ngModel)]="person.nom" value="nom" > 
             </div>
+            <div class="col-md-1"></div>
             <div class="col-md-5">
-              <label for="validationDefault02" class="form-label">Last name</label>
+              <label for="validationDefault02" class="form-label">Prénom</label>
               <input type="text" class="form-control" id="validationDefault02" name="prenom" required [(ngModel)]="person.prenom">
             </div>
             <div class="col-md-5">
                 <label for="validationDefault03" class="form-label">Code Postal</label>
                 <input type="text" class="form-control" id="validationDefault0445" name="codeP" required [(ngModel)]="person.codeP">
               </div>
+              <div class="col-md-1"></div>
             <div class="col-md-5">
-              <label for="validationDefault03" class="form-label">City</label>
+              <label for="validationDefault03" class="form-label">Ville</label>
               <input type="text" class="form-control" id="validationDefault03" name="city" required [(ngModel)]="person.city">
             </div>
-            <div class="col-md-9">
-              <label for="validationDefault05" class="form-label">Telephone</label>
-              <input type="number" class="form-control" id="validationDefault05"  name="tele" required [(ngModel)]="person.tele">
+            <div class="col-md-11">
+              <label for="validationDefault05" class="form-label">Téléphone</label>
+              <input type="text" class="form-control" id="validationDefault05"  name="tele"  required [(ngModel)]="person.tele">
             </div>
             </div>
             
@@ -32,22 +43,21 @@
     <br><br>
       <div class="carte3">
         <div class="row g-3">
-          <div class="col-md-9">
+          <div class="col-md-11">
             <label for="validationDefault05" class="form-label">E-mail</label>
             <input type="email" class="form-control" id="validationDefault0222" name="mail" required [(ngModel)]="person.mail">
           </div>
-         <div class="col-md-9">
+         <div class="col-md-11">
             <label for="validationDefault05" class="form-label">Mot de passe </label>
             <input type="password" class="form-control" id="validationDefault06" name="mot-passe" required [(ngModel)]="person.motpasse">
          </div>
+         
         </div>
       </div>
 
 
 
-    <h6>Informations complémentaires :</h6>
-    <h6>(instruments qui ne figurent pas dans la liste, disponibilité...)</h6>
-    <textarea name="" id="" cols="55" rows="4"></textarea>
+    
     <br>
     <h6>Vous êtes parrainé par un autre professeur ou un élève ? Renseignez ici le nom de votre parrain :</h6>
     <div class="col-md-4" id="fin">
@@ -110,7 +120,7 @@
       <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="invalidCheck29"  >
         <label class="form-check-label" for="invalidCheck2">
-            Violons
+            Violon
         </label>
       </div>
       <div class="form-check">
@@ -127,21 +137,23 @@
       </div>
     </div>
 
-    
+    <h6>Informations complémentaires :</h6>
+    <h6>(instruments qui ne figurent pas dans la liste, disponibilité...)</h6>
+    <textarea name="" id="" cols="55" rows="4"></textarea>
     
     
      <br>
      <div class="col-md-3">
-      <div class="form-check">
+      <div class="form-check coche ">
         <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required >
         <label class="form-check-label" for="invalidCheck2">
-          Agree to terms and conditions
+          Vous accepter les termes et les conditions du site
         </label>
       </div>
     </div>
     <br><br>
     <div class="col-md-2">
-        <button class="btn btn-primary" type="submit" [disabled]="f1.invalid" >Submit form</button>
+        <button class="btn btn-primary" type="submit" [disabled]="f1.invalid" >Je m'inscris</button>
     </div>
   </form>
 </body>

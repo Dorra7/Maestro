@@ -1,110 +1,107 @@
 <div class="bande">
-    <h3>+ Je m'inscris</h3>
+  <h3>+ Je m'inscris</h3>
 </div>
+
 <body>
-   
-    <div class="main">
-        <form #f="ngForm"  (ngSubmit)="add(f)">
-     <h5>Profil musical de l'élève</h5>
-     <div class="carte">
+
+  <div class="main">
+    <form #f="ngForm" (ngSubmit)="add(f)">
+      <h5>Profil musical de l'élève</h5>
+      <div class="carte">
+
+        <select name="instrument" id="inst">
+          <option value="ques1" selected>Instrument</option>
+          <option value="inst2">Batterie</option>
+          <option value="inst1">Chant</option>
+          <option value="inst3">Clarinette</option>
+          <option value="inst4">Guitare</option>
+          <option value="inst6">Piano</option>
+          <option value="inst5">Saxophone</option>
+          <option value="inst7">Violon</option>
+          <option value="inst7">Violoncelle</option>
+        </select>
+        <select name="style" id="style">
+          <option value="ques2" selected>Choisissez votre style</option>
+          <option value="style1">classique</option>
+          <option value="style2">variété</option>
+          <option value="style4">jazz</option>
+          <option value="style5">rock</option>
+          <option value="style6">autre</option>
+        </select>
+
+        <select name="niveau" id="niveau">
+          <option value="ques3" selected>Votre niveau</option>
+          <option value="inst1">débutant</option>
+          <option value="inst2">moyen</option>
+          <option value="inst3">avancé</option>
+        </select>
+      </div>
+      <br>
+      <br>
+      <h5>Renseignez ses coordonnées</h5>
+      <div class="carte2">
+        <select name="gendre" id="genre" ngModel>
+          <option value="">Civilité</option>
+          <option value="homme">Homme</option>
+          <option value="femme">Femme</option>
+        </select>
+        <div class="row">
+          <div class="col-md-3">
+            <label for="nom">Nom</label>
+          </div>
+          <div class="col-md-9">
+            <input type="text" name="nom" required placeholder="Entrez votre nom" [(ngModel)]="person1.nom">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <label for="prenom">Prénom</label>
+          </div>
+          <div class="col-md-9">
+            <input type="text" name="prenom" required placeholder="Entrez votre prénom" [(ngModel)]="person1.prenom">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <label for="date">Date de naissance</label>
+          </div>
+          <div class="col-md-9">
+            <input type="date" name="date" required [(ngModel)]="person1.date">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <label for="adresse">Adresse postale</label>
+          </div>
+          <div class="col-md-9">
+            <input type="text" name="addresse" required placeholder="Adresse à laquelle il prend ses cours"
+              [(ngModel)]="person1.addresse">
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <h5>Profil</h5>
+      <div class="carte3">
+        <div class="row">
+          <div class="col-md-3">
+            <label for="add">Adresse mail</label>
+          </div>
+          <div class="col-md-9">
+            <input type="text" name="mail" required placeholder="votre email" [(ngModel)]="person1.mail">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <label for="mot">Mot de passe</label>
+          </div>
+          <div class="col-md-9">
+            <input type="password" name="motpasse" required placeholder="mot de passe " [(ngModel)]="person1.motpasse">
+          </div>
+        </div>
         
-         <select name="instrument" id="inst" >
-             <option value="ques1" selected>Instrument</option>
-             <option value="inst1">chant</option>
-             <option value="inst2">batterie</option>
-             <option value="inst3">clarinette</option>
-             <option value="inst4">guitare</option>
-             <option value="inst5">saxophone</option>
-             <option value="inst6">piano</option>
-         </select>
-         <select name="style" id="style" >
-             <option value="ques2" selected>Choisissez votre style</option>
-             <option value="style1">classique</option>
-             <option value="style2">variété</option>
-             <option value="style3">clarinette</option>
-             <option value="style4">jazz</option>
-             <option value="style5">rock</option>
-             <option value="style6">autre</option>
-         </select>
- 
-         <select name="niveau" id="inst" >
-             <option value="ques3" selected>Votre niveau</option>
-             <option value="inst1">débutant</option>
-             <option value="inst2">moyen</option>
-             <option value="inst3">avancé</option>
-         </select>
-     </div>
-     <br>
-     <br>
-     <h5>Renseignez ses coordonnées</h5>
-     <div class="carte2">
-         <select name="gendre" id="inst" ngModel>
-             <option value="">civilité</option>
-             <option value="homme">Homme</option>
-             <option value="femme">Femme</option>
-         </select>
-         <div class="row">
-             <div class="col-md-3">
-                 <label for="nom" >Prénom</label>
-             </div>
-             <div class="col-md-9">
-                 <input type="text" name="prenom" required placeholder="entrez votre prenom" [(ngModel)]="person1.prenom">
-             </div>
-         </div>
-         <div class="row">
-             <div class="col-md-3">
-                 <label for="nom" >Nom</label>
-             </div>
-             <div class="col-md-9">
-                 <input type="text" name="nom" required placeholder="entrez votre nom" [(ngModel)]="person1.nom">
-             </div>
-         </div>
-         <div class="row">
-             <div class="col-md-3">
-                 <label for="date" >date de naissance</label>
-             </div>
-             <div class="col-md-9">
-                 <input type="date" name="date" required [(ngModel)]="person1.date">
-             </div>
-         </div>
-         <div class="row">
-             <div class="col-md-3">
-                 <label for="adresse"  >adresse</label>
-             </div>
-             <div class="col-md-9">
-                 <input type="text"  name="addresse" required placeholder="adresse a laquelle il prend ses cours" [(ngModel)]="person1.addresse">
-             </div>
-         </div>
-     </div>
-     <br><br>
-     <h5>Mot de passe</h5>
-     <div class="carte3">
-         <div class="row">
-             <div class="col-md-3">
-                 <label for="add" >adresse</label>
-             </div>
-             <div class="col-md-9">
-                 <input type="text" name="mail" required placeholder="votre email" [(ngModel)]="person1.mail">
-             </div>
-         </div>
-         <div class="row">
-             <div class="col-md-3">
-                 <label for="mot" >Mot de passe</label>
-             </div>
-             <div class="col-md-9">
-                 <input type="text" name="motpasse" required placeholder="mot de passe " [(ngModel)]="person1.motpasse">
-             </div>
-         </div>
-         <div class="row">
-             <div class="col-md-3">
-                 <label for="mot1" >Mot de passe</label>
-             </div>
-             <div class="col-md-9">
-                 <input type="text" required placeholder="confirmer mot de passe" >
-             </div>
-         </div>
-     </div>
-     <button type="submit" [disabled]="f.invalid" >+ Ajouter un élève</button>
+        
+      </div>
+      <button type="submit" [disabled]="f.invalid" class="btn">+ Ajouter un élève</button>
     </form>
-    </div> 
- </body>
+  </div>
+</body>

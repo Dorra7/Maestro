@@ -22,7 +22,7 @@ body{
     margin-left: 200px;
     font-size: 37px;
     font-family: Bahnschrift SemiBold;
-    color : #CB2229;
+    color : #CB2229;    
     
     
 }
@@ -114,5 +114,11 @@ button:hover{
     width: 315px;
     border-radius: 6px;
     margin-bottom: 20px;
+}
+
+.btn {
+    font-family: Bahnschrift SemiBold;
+    margin-bottom: 50px;
+    background-color: #C21010;
 }
 

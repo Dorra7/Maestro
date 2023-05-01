@@ -35,7 +35,7 @@
     margin-left: 100px;
     margin-right: 100px;
     box-shadow: 10px 10px 8px #242222;
-    font-family: Bahnschrift SemiBold;
+    font-family: Bahnschrift SemiBold; 
 }
 .cont button:hover{
     opacity: 0.7;

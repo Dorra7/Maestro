@@ -11,6 +11,7 @@ export class DevenirProfComponent {
   add(f:NgForm){
     this.prof.addprof(f.value)
     console.log(this.prof.getprof())
+    alert("Bienvenue chez nous !")
   }
   person={
     nom : String,

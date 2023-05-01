@@ -6,9 +6,13 @@ import { Service1Service } from '../services/service1.service';
   templateUrl: './cours-etd.component.html',
   styleUrls: ['./cours-etd.component.css']
 })
+
 export class CoursEtdComponent {
+
   t1: any=this.t.getTable();
- 
+  lien=this.t.get_lien()
+    
+    
   constructor(private t:Service1Service){
   }
 }

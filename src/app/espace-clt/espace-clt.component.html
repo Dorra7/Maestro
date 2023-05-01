@@ -1,17 +1,50 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <body>
-    <div class="carte">
-        <div class="header">
-            <h4>SE CONNECTER</h4>
+    <div class="background-image cont">
+        <div class="bande">
+            <h3>Espace Étudiant</h3>
         </div>
-        <form class="was-validated" #f="ngForm" (ngSubmit)="add(f)" >
-        <div class="bod">
-            <h1>Maestro</h1>
-            <h3>Espace client</h3>
-            <input type="email" placeholder="votre email" required name="mail" ngModel>
-            <input type="password" placeholder="Mot de passe" name="Mot-de-passe" required ngModel>
-            <button type="submit"  routerLink="/cours-etd" >entrer</button>
+  <div class="bod">
+    
+    <div class="box">
+      <div class="box-login " id="login">
+        <div class="top-header">
+          <h3>Bienvenue à nouveau</h3>
+          <small>Nous sommes heureux de vous retrouver</small>
         </div>
-       </form>
+        <form #f="ngForm" (ngSubmit)="add(f)">
+        <div class="input-group " >
+          <div class="input-field">
+            <input type="text" class="input-box" id="logEmail" name="mail" required ngModel>
+            <label for="logEmail">Adresse mail</label>
+          </div>
+          <div class="input-field">
+            <input type="password" class="input-box" id="logPassword" name="password" required ngModel>
+            <label for="logPassword">Mot de passe</label>
+            <div class="eye-area">
+              <div class="eye-box" onclick="myLogPassword()">
+                <i class="fa-regular fa-eye" id="eye"></i>
+                <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
+              </div>
+            </div>
+          </div>
+          <div class="remember">
+            <input type="checkbox" id="formCheck" class="check">
+            <label for="formCheck"> Se souvenir de moi </label>
+          </div>
+          <div class="input-field">
+            <button type="submit" class="input-submit">S'authentifier</button>
+          </div>
+          <div class="forgot">
+            <a href="##">Mot de passe oublié ?</a>
+          </div>
+          <h3 *ngIf="!test">email ou password incorrectes</h3>
+        </div>
+    </form>
+      </div>
+    </div>
+  </div>
     </div>
 </body>
 <router-outlet></router-outlet>

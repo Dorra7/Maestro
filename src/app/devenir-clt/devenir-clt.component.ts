@@ -21,6 +21,7 @@ export class DevenirCltComponent {
     this.user2.addetd(f.value)
     console.log(this.person1)
     console.log(this.user2.getetd())
+    alert("bienvenu")
 
   }
 constructor(private user2:Service1Service){

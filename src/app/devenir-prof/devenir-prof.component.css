@@ -3,7 +3,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 form{
     display: flex;
@@ -12,9 +12,39 @@ form{
     align-items: center;
 }
 
+.bande{
+    margin-top: 15px;
+    background-color: #e9edf7;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image:url("src\assets\img\groundproff.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.bande h3 {
+    margin-left: 120px;
+    font-size: 37px;
+    font-family: Bahnschrift SemiBold;
+    color : #CB2229;      
+}
+
+.text{
+    margin-top: 50px;
+    font-family: Bahnschrift SemiBold;
+    margin-left: 30px;
+    margin-left: 300px;
+    margin-bottom: 0px;
+    color: #545C8C;
+}
+
 
 .carte{
-   margin-top: 20px;
+   margin-top: 0px;
     justify-content: center;
     align-items: center;
     padding-left: 30px;
@@ -22,13 +52,14 @@ form{
     padding-bottom: 30px;
     height: auto;
     width: 700px;
-  box-shadow: 0 4px 8px 0 rgb(205, 73, 73,2);
+  box-shadow: 0 4px 8px 0 #545C8C;
   transition: 0.3ms;
   border-radius: 8px;
   display: flex;
+  font-family: Bahnschrift SemiBold;
 }
 .carte:hover {
-    box-shadow: 0 8px 16px 0 rrgb(205, 73, 73,2);
+    box-shadow: 0 8px 16px 0 #545C8C;
    background-color: rgba(222, 227, 238, 0.308);
 }
 .check{
@@ -36,9 +67,11 @@ form{
 }
 .form-check{
     padding-top: 10px;
+    font-family: Bahnschrift SemiBold;
 }
 h6{
     padding-top: 30px;
+    font-family: Bahnschrift SemiBold;
 }
 textarea{
     margin-top: 12px;
@@ -58,12 +91,18 @@ textarea{
      padding-bottom: 30px;
      height: auto;
      width: 700px;
-   box-shadow: 0 4px 8px 0 rgb(205, 73, 73,2);
+   box-shadow: 0 4px 8px 0 #545C8C;
    transition: 0.3ms;
    border-radius: 8px;
    display: flex;
+   font-family: Bahnschrift SemiBold;
  }
  .carte3:hover {
-     box-shadow: 0 8px 16px 0 rrgb(205, 73, 73,2);
+     box-shadow: 0 8px 16px 0 #545C8C;
     background-color: rgba(222, 227, 238, 0.308);
+ }
+ .btn {
+    font-family: Bahnschrift SemiBold;
+    margin-bottom: 50px;
+    background-color: #545C8C;
  }
